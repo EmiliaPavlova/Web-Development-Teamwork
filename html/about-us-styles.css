@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 80%;
+    font-family: "Tahoma", "Time New Roman", "sans-serif";
+}
+@media only screen and(max-width: 1600px){
+
+}
+@media only screen and(max-width: 1024px){
+
+}
+@media only screen and(max-width: 960px){
+
+}
+@media only screen and(max-width: 768px){
+
+}
+@media only screen and(max-width: 640px){
+
+}
+@media only screen and(max-width: 480px){
+
+}
+@media only screen and(max-width: 320px){
+
+}
