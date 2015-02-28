@@ -3,40 +3,110 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Our Mission</title>
-    <link rel="stylesheet" href="our-mission-styles.css">
+    <link rel="stylesheet" href="../styles/our-mission.css">
+     <style>
+        .leftaln{
+            font-size:40px; text-align:left; font-family: "Agatha", "Helvetica";
+        }
+    </style>  
 </head>
-<body>
-    <div id="wrapper">
-        <header>
-        	<nav>
-        		
-        	</nav>
-        </header>
-        <aside>
-        	<ul>
-        		<li></li>
-        	</ul>
-        </aside>
-        <main>
-        	<section>
-        		<article>
-        			
-        		</article>
-        	</section>
-        	<section>
-        		<article>
-        			
-        		</article>
-        	</section>
-        	<section>
-        		<article>
-        			
-        		</article>
-        	</section>
-        </main>
-        <footer>
-        	
-        </footer>
+<script language="JavaScript">
+
+//Parameters:
+//Широчината на "Телеграфа";
+var dwidth=400;
+//Височината на "Телеграфа";
+var dheight=600;
+//Скоростта на изписване на буквите
+var dspeed=10; //1s=1000;
+//Бакграунд;
+var dbcolor="transparent";
+
+var expclass='class=leftaln';
+
+//Съобщение:
+//В съобщението трябва да използвате \' in вместо of ';
+var mesaj='<font class="Agatha">Вървяла си Червената Шапчица през гората. Среща я Вълчо и й казва:<br/>– Червена Шапчице, сваляй гащичките!<br/>– Хе-хе-хе! Кумчо Вълчо си мисли, че ще му станат.';
+//Алгоритъм:
+var jj=-1;var kk=0;var wds=0;
+function iens6exp()
+    {
+        jj++;
+    if(kk==0&&mesaj.charAt(jj)=="<")
+        {
+            kk=1;wds=0;
+        }
+    else if(kk==1&&mesaj.charAt(jj)==">")
+        {
+            kk=0;wds=0;
+        }
+    else if(kk==1)wds=0;
+    if(kk==0&&mesaj.charAt(jj)!=">"&&jj<=mesaj.length)
+        {
+            wds=1;
+            iens6div.innerHTML=mesaj.substring(0,jj)+'<font color="red">'+"_"+'</font>';
+        }
+    if(wds>0&&jj<=mesaj.length)setTimeout("iens6exp()",dspeed);
+    else if(jj<=mesaj.length)iens6exp();
+    }
+function ns4exp()
+{
+    jj++;
+    if(kk==0&&mesaj.charAt(jj)=="<")
+        {
+            kk=1;wds=0;
+        }
+    else if(kk==1&&mesaj.charAt(jj)==">")
+        {
+            kk=0;wds=0;
+        }
+    else if(kk==1)wds=0;
+    if(kk==0&&mesaj.charAt(jj)!=">"&&jj<=mesaj.length)
+        {
+            wds=1;
+            ns4div.document.write('<div '+expclass+'>'+mesaj.substring(0,jj)+'<font color="red">'+"_"+'</font></div>');
+            ns4div.document.close();
+        }
+    if(wds>0&&jj<=mesaj.length)setTimeout("ns4exp()",dspeed);
+    else if(jj<=mesaj.length)ns4exp();
+}
+
+function startexp()
+{
+    if(document.getElementById)
+    {
+        alch=document.getElementById('chthis');iens6div=document.getElementById('expdiv');iens6div.innerHTML='';iens6exp();
+    }
+    else if(document.all)
+        {
+            alch=chthis;iens6div=expdiv;iens6div.innerHTML='';iens6exp();
+        }
+        else if(document.layers){ns4div=document.ns4expb0.document.ns4expb1;ns4div.document.write('');ns4div.document.close();ns4exp();
+    }
+}
+</script>
+<!--Край на скрипта между HEAD таговете -->
+</head>
+
+<body onload="startexp();">
+    <div class="wrapper">
+        <div class="TruZtori">
+            <!-- Начало да скрипта между<BODY ... > и </BODY> таговете -->
+            <script language="JavaScript">
+                document.write('<table border=0 CELLSPACING="0" align="left" CELLPADDING="0"><tr><td width='+dwidth+'>');
+                    if(document.all||document.getElementById)
+                        {
+                            document.write('<div id="chthis" '+expclass+' style="position:relative;width:'+dwidth+';height:'+dheight+';background-color:'+dbcolor+';"><span id="expdiv"></span></div>');
+                        }
+            </script>
+            <ilayer id="ns4expb0" width=&{dwidth}; height=&{dheight}; bgcolor=&{dbcolor};>
+                <layer id="ns4expb1" width=&{dwidth}; height=&{dheight};>       
+                </layer>
+            </ilayer>
+                    </td>   
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

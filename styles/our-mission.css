@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+	font-family: Agatha;
+	src: url('../fonts/Agatha-Modern.ttf');
+	font-size: 20px;
+	font-weight: bold;
+}
+body{
+	background: url("../images/orlando2.jpg") no-repeat center center fixed;	
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 98%;
+}
+#wrapper{
+    margin: 10px;  
+    width: 95%;    
+ }
+ .TruZtori{
+ 	margin: 10px;
+ }
+
+@media only screen and(max-width: 1600px){
+
+}
+@media only screen and(max-width: 1024px){
+
+}
+@media only screen and(max-width: 960px){
+
+}
+@media only screen and(max-width: 768px){
+
+}
+@media only screen and(max-width: 640px){
+
+}
+@media only screen and(max-width: 480px){
+
+}
+@media only screen and(max-width: 320px){
+
+}
