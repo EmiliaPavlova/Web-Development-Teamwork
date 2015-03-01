@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face{
 	font-family: Agatha;
-	src: url('../fonts/Agatha-Modern.ttf');
-	
+	src: url('../fonts/Agatha-Modern.ttf');	
 }
+
+@font-face{
+    font-family: Lolita;
+    src: url('../fonts/A_Lolita_Scorned.ttf');
+}
+
 body{
 	background: url("../images/orlando2.jpg") no-repeat center center fixed;	
     -webkit-background-size: cover;
@@ -15,13 +21,56 @@ body{
     background-size: cover;
     max-width: 98%;
 }
+
 #wrapper{
     margin: 10px;  
     width: 95%;    
- }
- .TruZtori{
- 	margin: 10px;
- }
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 1em;
+    font-family: 'Lolita';
+    font-size: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+li a{
+    color: green;
+    text-decoration: none;
+    float: left;
+    
+}
+
+.left:hover {
+     color: pink;
+    /*Transition*/
+    -webkit-transition:All .5s ease;
+    -moz-transition:All .5s ease;
+    -o-transition:All .5s ease;
+     
+    /*Transform*/
+    -webkit-transform: rotate(-10deg) scale(1.2);
+    -moz-transform: rotate(-10deg) scale(1.2);
+    -o-transform: rotate(-10deg) scale(1.2);
+}
+ 
+.right:hover {
+    color: orange;
+    /*Transition*/
+    -webkit-transition:All .5s ease;
+    -moz-transition:All .5s ease;
+    -o-transition:All .5s ease;
+     
+    /*Transform*/
+    -webkit-transform: rotate(10deg) scale(1.2);
+    -moz-transform: rotate(10deg) scale(1.2);
+    -o-transform: rotate(10deg) scale(1.2);
+}
+
+ 
 
 @media only screen and(max-width: 1600px){
 

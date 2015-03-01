@@ -89,24 +89,30 @@ function startexp()
 </head>
 
 <body onload="startexp();">
-    <div class="wrapper">
-        <div class="TruZtori">
-            <!-- Начало да скрипта между<BODY ... > и </BODY> таговете -->
-            <script language="JavaScript">
-                document.write('<table border=0 CELLSPACING="0" align="left" CELLPADDING="0"><tr><td width='+dwidth+'>');
-                    if(document.all||document.getElementById)
-                        {
-                            document.write('<div id="chthis" '+expclass+' style="position:relative;width:'+dwidth+';height:'+dheight+';background-color:'+dbcolor+';"><span id="expdiv"></span></div>');
-                        }
-            </script>
-            <ilayer id="ns4expb0" width=&{dwidth}; height=&{dheight}; bgcolor=&{dbcolor};>
-                <layer id="ns4expb1" width=&{dwidth}; height=&{dheight};>       
-                </layer>
-            </ilayer>
-                    </td>   
-                </tr>
-            </table>
-        </div>
+    <div class="wrapper">    
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="left">Main Page</a></li>
+                <li><a href="#" class="right">About Us</a></li>
+                <li><a href="#" class="left">Contact Us</a></li>
+                <li><a href="#" class="right">Fan Page</a></li>
+            </ul>
+        </nav>    
+        <!-- Начало да скрипта между<BODY ... > и </BODY> таговете -->
+        <script language="JavaScript">
+            document.write('<table border=0 CELLSPACING="0" align="left" CELLPADDING="0"><tr><td width='+dwidth+'>');
+                if(document.all||document.getElementById)
+                    {
+                        document.write('<div id="chthis" '+expclass+' style="position:relative;width:'+dwidth+';height:'+dheight+';background-color:'+dbcolor+';"><span id="expdiv"></span></div>');
+                    }
+        </script>
+        <ilayer id="ns4expb0" width=&{dwidth}; height=&{dheight}; bgcolor=&{dbcolor};>
+            <layer id="ns4expb1" width=&{dwidth}; height=&{dheight};>       
+            </layer>
+        </ilayer>
+                </td>
+             </tr>
+        </table>        
     </div>
 </body>
 </html>
