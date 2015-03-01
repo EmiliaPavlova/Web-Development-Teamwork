@@ -1,6 +1,11 @@
 @font-face {
-    font-family: logo-font;
+    font-family: menu-font;
     src: url('../fonts/arkwright.otf');
+}
+
+@font-face {
+    font-family: slogan-font;
+    src: url('../fonts/mb-demonic_tale.ttf');
 }
 
 body {
@@ -35,7 +40,7 @@ ul > li {
 ul > li > a,
 nav > ul > li > ul > li > a {
 	text-decoration: none;
-	font-family: logo-font;
+	font-family: menu-font;
 	font-size: 1.2em;
 	color: #C2C2C2;
 	vertical-align: top;
@@ -77,7 +82,7 @@ section {
 h1 {
 	margin-left: 10%;
 	margin-bottom: 5%;
-	font-family: logo-font;
+	font-family: menu-font;
 	font-size: 3em;
 	color: #FFF;
 	text-align: left;
@@ -96,6 +101,15 @@ section p {
 
 span {
 	font-style: italic;
+	color: #C2C2C2;
+}
+
+.slogan {
+	margin: 5%;
+	text-transform: capitalize;
+	text-align: center;
+	font-family: slogan-font;
+	font-size: 2.5em;
 	color: #C2C2C2;
 }
 
