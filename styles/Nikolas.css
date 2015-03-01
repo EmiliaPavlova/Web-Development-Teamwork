@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: menu-font;
     src: url('../fonts/arkwright.otf');
@@ -77,6 +78,7 @@ section {
 
 .bio {
 	margin-left: 5%;
+	text-indent: 20px;
 }
 
 h1 {
