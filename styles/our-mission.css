@@ -27,7 +27,7 @@ body{
     width: 95%;    
 }
 
-ul li{
+.navigation li{
     display: inline-block;
     list-style: none;
     margin-left: 1em;
@@ -37,7 +37,7 @@ ul li{
     text-align: center;
 }
 
-li a{
+.navigation li a{
     color: green;
     text-decoration: none;
     float: left;
