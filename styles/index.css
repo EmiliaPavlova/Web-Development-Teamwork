@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 1024px;
+	position: relative;
+}
+
+body {
+	background-color: #000;
+}
+
+.background {
+	width: 100%;
+	position: absolute;
+}
+
+.alex {
+	width: 10%;
+	position: absolute;
+	left: 13px;
+	top: 68px;
+}
+
+.alex:hover {
+	width: 10%;
+	height: 10%;
+/*	position: absolute;*/
+/*	left: 13px;
+	top: 68px;*/
+	background-image: url(../images/Alex-hover.png);
+}
+
+.contacts {
+	width: 7%;
+	position: absolute;
+	left: 272px;
+	top: 25px;
+}
+
+.contacts:hover {
+	width: 7%;
+	height: 7%;
+	background-image: url(../images/pigeon-hover.png);
+}
+
+.mission {
+	width: 9%;
+	position: absolute;
+	left: 654px;
+	top: 12px;
+}
+
+.mission:hover {
+	width: 9%;
+	height: 9%;
+	background-image: url(../images/star-hover.png);	
+}
+
+.news {
+	width: 14%;
+	position: absolute;
+	left: 875px;
+	top: 4px;
+}
+
+.news:hover {
+	width: 14%;
+	height: 14%;
+	background-image: url(../images/board-hover.png);
+}
+
+.angelos {
+	width: 35%;
+	position: absolute;
+	left: 305px;
+	top: 90px;
+}
+
+.angelos:hover {
+	width: 35%;
+	height: 35%;
+	background-image: url(../images/Angel-hover.png);
+}
+
+.bogomos {
+	width: 35%;
+	position: absolute;
+	left: 580px;
+	top: 140px;
+}
+
+.bogomos:hover {
+	width: 35%;
+	height: 35%;
+	background-image: url(../images/Bogomil-hover.png);
+}
+
+.nikolas {
+	width: 35%;
+	position: absolute;
+	left: 95px;
+	top: 160px;
+}
+
+.nikolas:hover {
+	width: 35%;
+	height: 35%;
+	background-image: url(../images/Nikolay-hover.png);
+}
+
+.logo {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 400px;
+}
+@media all and (max-width: 1600px){
+	
+}
+@media all and (max-width: 1024px){
+	
+}
+@media all and (max-width: 960px){
+	
+}
+@media all and (max-width: 768px){
+	
+}
+@media all and (max-width: 640px){
+	
+}
+@media all and (max-width: 480px){
+	
+}
+@media all and (max-width: 320px){
+	
+}
