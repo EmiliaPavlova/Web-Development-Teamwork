@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: menu-font;
+    src: url('../fonts/arkwright.otf');
+}
+
+@font-face {
+    font-family: slogan-font;
+    src: url('../fonts/mb-demonic_tale.ttf');
+}
+
+body {
+    background-color: #000;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 960px;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 4% 0;
+    width: 90%;
+    float: right;
+}
+
+nav:after {
+    clear: right;
+}
+
+
+ul > li {
+    padding-left: 5%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+ul > li > a,
+nav > ul > li > ul > li > a {
+    text-decoration: none;
+    font-family: menu-font;
+    font-size: 1.2em;
+    color: #C2C2C2;
+    vertical-align: top;
+}
+
+ul > li:hover > a,
+ul > li:active > a,
+nav > ul > li > ul > li:hover > a,
+nav > ul > li > ul > li:active > a  {
+    color: #FFF;
+}
+
+nav > ul > li > ul > li {
+    margin-top: 2%;
+    display: none;
+    padding-left: 20%;
+}
+
+nav > ul > li:hover ul {
+    position: absolute;
+    transition: 2s;
+}
+
+nav > ul > li:hover ul > li {
+    display: block;
+}
+
+section {
+    margin: 5% 0;
+    margin-left: 20%;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bio {
+    margin-left: 5%;
+    text-indent: 20px;
+}
+
+h1 {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-family: menu-font;
+    font-size: 3em;
+    color: #FFF;
+    text-align: left;
+}
+
+section p {
+    margin-left: 10%;
+    margin-right: 4%;
+    padding-top: 1%;
+    width: 90%;
+    text-align: justify;
+    color: #FFF;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+span {
+    font-style: italic;
+    color: #C2C2C2;
+}
+
+.slogan {
+    margin: 5%;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: slogan-font;
+    font-size: 2.5em;
+    color: #C2C2C2;
+}
+
+footer {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    float: right;
+    color: #C2C2C2;
+    font-style: italic;
+}
+
+img
+{
+    border-radius: 250px;
+}
+
+a.slogan{
+    text-decoration: none;
+}
