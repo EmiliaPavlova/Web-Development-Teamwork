@@ -1,47 +1,158 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
-    <title>The Three Softwareers/Mission</title>
-    <link rel="stylesheet" type="text/css" href="../styles/CSS-Reset.css">
-    <link rel="stylesheet" type="text/css" href="../styles/our-mission.css">
-    <script language="javascript" type="text/javascript" src="../js/play-sounds.js"></script>
-</head>
-<body>
-<div id="wrapper">
-    <nav>
-        <ul>
-            <li><a href="#" title="Home" onmouseover="mouseoversound1.playclip()">Home</a></li>
-            <li><a href="#" title="About us" onmouseover="mouseoversound1.playclip()">Who we are</a>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Three Softwareers/Mission</title>
+        <link rel="stylesheet" type="text/css" href="../styles/CSS-Reset.css">
+        <link rel="stylesheet" type="text/css" href="../styles/our-mission.css">
+       <!-- <script language="javascript" type="text/javascript" src="../js/play-sounds.js"></script> -->
+        <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+         
+
+        <script language="JavaScript">
+
+        //Parameters:
+        //Широчината на "Телеграфа";
+        var dwidth=350;
+        //Височината на "Телеграфа";
+        var dheight=600;
+        //Скоростта на изписване на буквите
+        var dspeed=10; //1s=1000;
+        //Бакграунд;
+        var dbcolor="transparent";
+
+        var expclass='class=leftalign';
+
+        //Съобщение:
+        //В съобщението трябва да използвате \' in вместо of ';
+        var mesaj='<font class="Agatha">Вървяла си Червената Шапчица през гората. Среща я Вълчо и й казва:<br/>– Червена Шапчице, _!_сваляй гащичките!<br/>– Хе-хе-хе! Кумчо Вълчо си мисли, че ще му станат.';
+        //Алгоритъм:
+        var jj=-1;var kk=0;var wds=0;
+        function iens6exp()
+            {
+                jj++;
+            if(kk==0&&mesaj.charAt(jj)=="<")
+                {
+                    kk=1;wds=0;
+                }
+            else if(kk==1&&mesaj.charAt(jj)==">")
+                {
+                    kk=0;wds=0;
+                }
+            else if(kk==1)wds=0;
+            if(kk==0&&mesaj.charAt(jj)!=">"&&jj<=mesaj.length)
+                {
+                    wds=1;
+                    iens6div.innerHTML=mesaj.substring(0,jj)+'<font color="red">'+"_"+'</font>';
+                }
+            if(wds>0&&jj<=mesaj.length)setTimeout("iens6exp()",dspeed);
+            else if(jj<=mesaj.length)iens6exp();
+            }
+        function ns4exp()
+        {
+            jj++;
+            if(kk==0&&mesaj.charAt(jj)=="<")
+                {
+                    kk=1;wds=0;
+                }
+            else if(kk==1&&mesaj.charAt(jj)==">")
+                {
+                    kk=0;wds=0;
+                }
+            else if(kk==1)wds=0;
+            if(kk==0&&mesaj.charAt(jj)!=">"&&jj<=mesaj.length)
+                {
+                    wds=1;
+                    ns4div.document.write('<div '+expclass+'>'+mesaj.substring(0,jj)+'<font color="red">'+"_"+'</font></div>');
+                    ns4div.document.close();
+                }
+            if(wds>0&&jj<=mesaj.length)setTimeout("ns4exp()",dspeed);
+            else if(jj<=mesaj.length)ns4exp();
+        }
+
+        function startexp()
+        {
+            if(document.getElementById)
+            {
+                alch=document.getElementById('chthis');iens6div=document.getElementById('expdiv');iens6div.innerHTML='';iens6exp();
+            }
+            else if(document.all)
+                {
+                    alch=chthis;iens6div=expdiv;iens6div.innerHTML='';iens6exp();
+                }
+                else if(document.layers){ns4div=document.ns4expb0.document.ns4expb1;ns4div.document.write('');ns4div.document.close();ns4exp();
+            }
+        }
+        </script>
+        <!--Край на скрипта между HEAD таговете -->
+    </head>
+    <body onload="startexp();">
+
+ <!-- Начало на #wrapper --> 
+        <div id="wrapper">
+            <nav>
                 <ul>
-                    <li><a href="Angelos.html">Angelos</a></li>
-                    <li><a href="Bogomos.html">Bogomos</a></li>
-                    <li><a href="Nikolas.html">Nikolas</a></li>
+                    <li><a href="main-page.html" class="left" title="Home" onmouseover="mouseoversound1.playclip()">Home</a></li>
+                    <li><a href="#" class="right" title="About us" onmouseover="mouseoversound1.playclip()">Who we are</a>
+                        <ul>
+                            <li><a href="Angelos.html">Angelos</a></li>
+                            <li><a href="Bogomos.html">Bogomos</a></li>
+                            <li><a href="Nikolas.html">Nikolas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="our-mission.html"  class="left" title="Mission" onmouseover="mouseoversound1.playclip()">What we fight for</a></li>
+                    <li><a href="fan-page.html" class="right" title="Fanclub" onmouseover="mouseoversound1.playclip()">Who we have inspired</a></li>
+                    <li><a href="contact-us.html" class="left" title="Contacts" onmouseover="mouseoversound1.playclip()">Where to find us</a></li>
                 </ul>
-            </li>
-            <li><a href="our-mission.html" title="Mission" onmouseover="mouseoversound1.playclip()">What we fight for</a></li>
-            <li><a href="fan-page.html"  title="Fanclub" onmouseover="mouseoversound1.playclip()">Who we have inspired</a></li>
-            <li><a href="contact-us.html" title="Contacts" onmouseover="mouseoversound1.playclip()">Where to find us</a></li>
-        </ul>
-    </nav>
+            </nav>
 
-    <section class="bio">
-        <h1>Our Mission</h1>
+            <section class="bio">
 
-        <p>
+                <h1>Our Mission</h1>
 
-        </p>
-        <p>
+<!-- Начало да скрипта между <div class="djo"> -->
+                    <div class= "djo">
 
-        </p>
+                        <script language="JavaScript">
+                            document.write('<table border=0 CELLSPACING="0" align="left" CELLPADDING="0"><tr><td width='+dwidth+'>');
+                                if(document.all||document.getElementById)
+                                    {
+                                        document.write('<div id="chthis" '+expclass+' style="position:relative;width:'+dwidth+';height:'+dheight+';background-color:'+dbcolor+';"><span id="expdiv"></span></div>');
+                                    }
+                        </script>
+                        <ilayer id="ns4expb0" width=&{dwidth}; height=&{dheight}; bgcolor=&{dbcolor};>
+                            <layer id="ns4expb1" width=&{dwidth}; height=&{dheight};>       
+                            </layer>
+                        </ilayer>
+                                </td>   
+                            </tr>
+                        </table>
 
-    </section>
+                    </div>
+<!-- край на скрипта в <div class="djo"> -->
+                    <div class="mo">
+                        
+                        <div class="ejko jo"><h2>Snejanka</h2></div>              
+                        <div class="ejko">Baj Mangal</div>                        
+                        <div class="ejko">И...Седемте джуджета</div>
+                        <div class="ejko-bejko">BoniBOn</div>
+                        <div class="ejko bejko">Краставата жаба</div>
+                        </div> 
+                        <script>
+                            $(".ejko").on("click", function() {
+                                $(this).siblings().removeClass("bejko");             
+                                $(this).addClass("bejko");
+                            });
+                        </script>   
 
-    <footer>
-        <img src="../images/logo-line.png" alt="Logo" width="960px">
+                    
+            </section>
 
-        <p class="italic">&copy; Team "Emerald"</p>
-    </footer>
-</div>
-</body>
+            <footer>
+                <img src="../images/logo-line.png" alt="Logo" width="960px">
+                <h3 class="italic">&copy; Team "Emerald"</h3>
+            </footer>
+        </div>
+<!-- Край на #wrapper -->        
+    </body>
 </html>
