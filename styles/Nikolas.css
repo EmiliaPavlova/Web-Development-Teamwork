@@ -34,7 +34,7 @@ ul > li {
 	padding-left: 5%;
 	display: inline-block;
 	text-decoration: none;
-	text-align: left;
+	text-align: center;
 	vertical-align: top;
 }
 
@@ -42,7 +42,7 @@ ul > li > a,
 nav > ul > li > ul > li > a {
 	text-decoration: none;
 	font-family: menu-font;
-	font-size: 1.2em;
+	font-size: 15px;
 	color: #C2C2C2;
 	vertical-align: top;
 }
