@@ -16,7 +16,7 @@
     src: url('../fonts/mb-demonic_tale.ttf');
 }
 .leftalign{
-    font-size:30px; color: #fff; text-align:left; font-family: "Agatha", "Lolita";
+    font-size:30px; color: #fff; text-align:left; font-family: "Fondamento", cursive;
 }
 
 body {
@@ -26,13 +26,13 @@ body {
     -o-background-size: cover;
     background-size: cover;
     max-width: 100%; 
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 #wrapper{
     padding: 20px;
     margin-top: -20px;  
-    width: 95%;     
+    width: 95%; 
 }
 
 nav {
@@ -57,7 +57,7 @@ ul > li {
 ul > li > a,
 nav > ul > li > ul > li > a {
     text-decoration: none;
-    font-family: menu-font;
+    font-family: 'Fondamento', cursive;
     font-size: 20px;
     color: #C2C2C2;
     text-align: center;
@@ -112,12 +112,14 @@ nav > ul > li:hover ul > li {
 }
 
 h1 {   
-    font-family: 'Agatha', cursive;
+    font-family: 'Fondamento', cursive;
+    text-transform: capitalize;
     font-weight: bold;    
     text-indent: 20px;
     font-size: 4em;
     color: black;
     text-align: center;
+    color: #C2C2C2;
 }
 
 .self-printed-text{
@@ -125,6 +127,15 @@ h1 {
     width: 950px;
     height: 800px;    
     float: left;
+}
+
+.slogan {
+    margin: 2%;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 2.5em;
+    color: #C2C2C2;
 }
 
 footer.clear{
@@ -162,7 +173,7 @@ article>a{
 }
 .faces{
     width: 100px;
-    height: 100px;
+    height: 100px;    
     border-radius: 50%;
     background-color: blue;
     
