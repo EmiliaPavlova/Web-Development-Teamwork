@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/contact-us.css">
     <link href='http://fonts.googleapis.com/css?family=Uncial+Antiqua' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
-    <script language="javascript" type="text/javascript" src="../js/play-sounds.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/play-sounds.js"> </script>
 </head>
 <body>
 <div id="wrapper">
@@ -21,14 +21,14 @@
                     <li><a href="Nikolas.html">Nikolas</a></li>
                 </ul>
             </li>
-            <li><a href="our-mission.html" title="Mission" onmouseover="mouseoversound1.playclip()">What we fight for</a></li>
+            <li>
+                <a href="our-mission.html" title="Mission" onmouseover="mouseoversound1.playclip()">What we fight for</a></li>
             <li><a href="fan-page.html"  title="Fanclub" onmouseover="mouseoversound1.playclip()">Who we have inspired</a></li>
             <li><a href="contact-us.html" title="Contacts" onmouseover="mouseoversound1.playclip()">Where to find us</a></li>
         </ul>
     </nav>
-
     <section  class="social" >
-        <img class="profile-pic hvr-pulse" id="angel" src="../images/Angel-name.png" alt="Angel-profile-pic">
+        <img class="profile-pic hvr-pulse" id="angel" src="../images/Angel-name.png" alt="Angel-profile-pic"/>
         <ul class="social">
             <li>
                 <a href="https://www.facebook.com/achebg">
@@ -49,7 +49,7 @@
     </section>
 
     <section class="social" >
-        <img  class="profile-pic hvr-pulse"  id="bogomil" src="../images/Bogomil-name.png" alt="Bogomil-profile-pic">
+        <img  class="profile-pic hvr-pulse"  id="bogomil" src="../images/Bogomil-name.png" alt="Bogomil-profile-pic"/>
         <ul class="social">
             <li>
                 <a href="https://www.facebook.com/Shadestep">
@@ -70,7 +70,7 @@
     </section>
 
     <section class="social" >
-        <img  class="profile-pic hvr-pulse" id="nikolay" src="../images/Nikolay-name.png" alt="Nikolay-profile-pic">
+        <img  class="profile-pic hvr-pulse" id="nikolay" src="../images/Nikolay-name.png" alt="Nikolay-profile-pic"/>
         <ul class="social">
             <li>
                 <a href="https://www.facebook.com/nikbikbank">
@@ -88,19 +88,18 @@
                 </a>
             </li>
         </ul>
-    </section>    
+    </section>
     <footer>
         <img src="../images/logo-line.png" alt="Logo" width="960px" />
-        <article class="logos">
+        <div>
+            <p>&copy; Team "Emerald"</p>
             <a href="http://css-validator.org/check/referer" target="_blank">
-                <img src="../images/css3icon.jpg" alt="Валиден CSS!" />
+                <img class="validator" src="../images/css-validator.png" alt="CSS validator" width="82px" height="17px" />
             </a>
-
             <a href="http://validator.w3.org" target="_blank">
-                <img src="../images/html5icon.png" alt="Валидатор HTML5">
+                <img class="validator" src="../images/html-validator.png" alt="HTML5 validator" width="82px" height="17px" />
             </a>
-        </article>
-        <p>&copy; Team "Emerald"</p>
+        </div>
     </footer>
 </div>
 </body>
