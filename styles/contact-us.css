@@ -114,12 +114,14 @@ footer {
     position: relative;
 }
 
-footer p {
+footer div {
+    display: inline;
     position: absolute;
     bottom: 8%;
     right: 2%;
     float: right;
     color: #C2C2C2;
+    text-align: right;
     font-style: italic;
 }
 article>a{
@@ -143,6 +145,7 @@ article>a{
     width: 250px;
     height: 300px;
     margin: 50px ;
+
 
 }
 
