@@ -6,24 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="../styles/CSS-Reset.css">
     <link rel="stylesheet" href="../styles/index.css">
-     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script language="javascript" type="text/javascript" src="../js/play-sounds.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <main>
-            <img src="../images/Background.jpg" class="img-responsive" alt="Cinque Terre" width="1600" height="1080">
-            <a href="fan-page.html" class="alex"></a>
-            <a href="contact-us.html" class="contacts"></a>
-            <a href="our-mission.html" class="mission"></a>
-            <a href="https://softuni.bg/" class="news"></a>
-            <a href="Angelos.html" class="angelos"></a>
-            <a href="Bogomos.html" class="bogomos"></a>
-            <a href="Nikolas.html" class="nikolas"></a>
-            <a href="https://softuni.bg/" target="blank" class="logo"></a>
+            <ul class="hidden-menu">
+                <li><a href="fan-page.html" target="_blank" onmouseover="mouseoversound1.playclip()">Fan Page</a></li>
+                <li><a href="contact-us.html" target="_blank" onmouseover="mouseoversound1.playclip()">Contact us</a></li>
+                <li><a href="our-mission.html" target="_blank" onmouseover="mouseoversound1.playclip()">Our mission</a></li>
+                <li><a href="https://softuni.bg/" target="_blank" onmouseover="mouseoversound1.playclip()">News</a></li>
+                <li><a href="Angelos.html" target="_blank" onmouseover="mouseoversound1.playclip()">Angelos</a></li>
+                <li><a href="Bogomos.html" target="_blank" onmouseover="mouseoversound1.playclip()">Bogomos</a></li>
+                <li><a href="Nikolas.html" target="_blank" onmouseover="mouseoversound1.playclip()">Nikolas</a></li>
+            </ul>
+            <div class="background"></div>
+            <a href="fan-page.html" onmouseover="mouseoversound1.playclip()" target="_blank" class="alex"></a>
+            <a href="contact-us.html" onmouseover="mouseoversound1.playclip()" target="_blank" class="contacts"></a>
+            <a href="our-mission.html" onmouseover="mouseoversound1.playclip()" target="_blank" class="mission"></a>
+            <a href="https://softuni.bg/" onmouseover="mouseoversound1.playclip()" target="_blank" class="news"></a>
+            <a href="Angelos.html" onmouseover="mouseoversound1.playclip()" target="_blank" class="angelos"></a>
+            <a href="Bogomos.html" onmouseover="mouseoversound1.playclip()" target="_blank" class="bogomos"></a>
+            <a href="Nikolas.html" onmouseover="mouseoversound1.playclip()" target="_blank" class="nikolas"></a>
+            <a href="https://softuni.bg/" onmouseover="mouseoversound1.playclip()" target="blank" class="logo"></a>
+            <p class="italic">&copy; Team "Emerald"</p>
         </main>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </div>
-    
 </body>
 </html>
