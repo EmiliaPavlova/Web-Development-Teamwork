@@ -1,22 +1,6 @@
-@font-face{
-    font-family: Lolita;
-    src: url('../fonts/A_Lolita_Scorned.ttf');
-}
-@font-face{
-    font-family: Agatha;
-    src: url('../fonts/Agatha-Modern.ttf');
-}
-@font-face {
-    font-family: menu-font;
-    src: url('../fonts/arkwright.otf');
-}
 
-@font-face {
-    font-family: slogan-font;
-    src: url('../fonts/mb-demonic_tale.ttf');
-}
 .leftalign{
-    font-size:30px; color: #fff; text-align:left; font-family: "Fondamento", cursive;
+    font-size:30px; color: #E6E7E9; text-align:left; font-family: "Fondamento", cursive;
 }
 
 body {
@@ -112,13 +96,12 @@ nav > ul > li:hover ul > li {
 }
 
 h1 {   
-    font-family: 'Fondamento', cursive;
+    font-family: 'Uncial Antiqua', cursive;
     text-transform: capitalize;
-    font-weight: bold;    
     text-indent: 20px;
     font-size: 4em;
-    color: black;
     text-align: center;
+    text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0;
     color: #C2C2C2;
 }
 
@@ -130,12 +113,13 @@ h1 {
 }
 
 .slogan {
-    margin: 2%;
+    margin: 1%;
     text-transform: capitalize;
     text-align: center;
     font-family: 'Uncial Antiqua', cursive;
     font-size: 2.5em;
-    color: #C2C2C2;
+    color: #E6E7E9;
+    text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0;
 }
 
 footer.clear{
@@ -175,8 +159,8 @@ article>a{
     width: 100px;
     height: 100px;    
     border-radius: 50%;
-    background-color: blue;
-    
+    background-color: transparent;
+    margin-left: 30px;
      -moz-transition:-moz-transform 0.5s ease-in; 
     -webkit-transition:-webkit-transform 0.5s ease-in; 
     -o-transition:-o-transform 0.5s ease-in;
@@ -219,6 +203,7 @@ article>a{
     -webkit-transform:scale(2);
     -o-transform:scale(2);
 }
+ 
 
 
 @media only screen and (max-width:1600px) {
