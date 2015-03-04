@@ -743,43 +743,7 @@ p{
     .background{
         background-color: #000000;
     }
-    .alex {
-        display: none;
-    }
-    .alex:hover {
-        display: none;
-    }
-    .nikolas {
-        display: none;
-    }
-    .nikolas:hover {
-        display: none;
-    }
-    .contacts {
-        display: none;
-    }
-    .contacts:hover {
-        display: none;
-    }
-    .mission {
-        display: none;
-    }
-    .news {
-        display: none;
-    }
-    .news:hover {
-        display: none;
-    }
-    .angelos {
-        display: none;
-    }
-    .angelos:hover {
-        display: none;
-    }
-    .bogomos {
-        display: none;
-    }
-    .bogomos:hover {
+    .alex, .nikolas, .contacts, .mission, .news, .angelos, .bogomos {
         display: none;
     }
     #wrapper > main > p{
@@ -789,6 +753,24 @@ p{
         top: 300px;
         left: 0;
         font-size: 0.5em;
+    }
+    #wrapper > footer > p{
+        position: absolute;
+        z-index: 1111;
+        color: white;
+        top: 305px;
+        left: 0;
+        font-size: 16px;
+    }
+    #wrapper > footer > article > a:nth-child(1){
+        position: absolute;
+        bottom: 590px;
+        right: 830px;
+    }
+    #wrapper > footer > article > a:nth-child(2){
+        position: absolute;
+        bottom: 560px;
+        right: 830px;
     }
 }
 @media screen and (max-width: 320px){
@@ -830,43 +812,25 @@ p{
     .background{
         background-color: #000000;
     }
-    .alex {
+    .alex, .nikolas, .contacts, .mission, .news, .angelos, .bogomos {
         display: none;
     }
-    .alex:hover {
-        display: none;
+     #wrapper > footer > p{
+        position: absolute;
+        z-index: 1111;
+        color: white;
+        top: 245px;
+        left: 0;
+        font-size: 16px;
     }
-    .nikolas {
-        display: none;
+    #wrapper > footer > article > a:nth-child(1){
+        position: absolute;
+        bottom: 645px;
+        right: 980px;
     }
-    .nikolas:hover {
-        display: none;
-    }
-    .contacts {
-        display: none;
-    }
-    .contacts:hover {
-        display: none;
-    }
-    .mission {
-        display: none;
-    }
-    .news {
-        display: none;
-    }
-    .news:hover {
-        display: none;
-    }
-    .angelos {
-        display: none;
-    }
-    .angelos:hover {
-        display: none;
-    }
-    .bogomos {
-        display: none;
-    }
-    .bogomos:hover {
-        display: none;
+    #wrapper > footer > article > a:nth-child(2){
+        position: absolute;
+        bottom: 620px;
+        right: 980px;
     }
 }
