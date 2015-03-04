@@ -119,6 +119,27 @@ footer p {
 	font-style: italic;
 }
 
+footer p {
+    position: absolute;
+    bottom: 8%;
+    right: 2%;
+    float: right;
+    color: #C2C2C2;
+    font-style: italic;
+}
+
+article>a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.logos{
+    position: absolute;
+    bottom: 12%;
+    float: left;
+    left: 3%;
+}
+ 
 @media all and (max-width: 960px){
 	#wrapper {
 		width: 100%;

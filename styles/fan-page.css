@@ -116,12 +116,24 @@ footer {
 
 footer p {
     position: absolute;
-    bottom: 2%;
+    bottom: 8%;
     right: 2%;
     float: right;
     color: #C2C2C2;
     font-style: italic;
 }
+article>a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.logos{
+    position: absolute;
+    bottom: 12%;
+    float: left;
+    left: 3%;
+}
+
 img
 {
     border-radius: 250px;
@@ -130,6 +142,7 @@ img
 a.slogan{
     text-decoration: none;
 }
+
 
 /* Bounce In */
 .hvr-bounce-in {
