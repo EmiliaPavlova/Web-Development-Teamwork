@@ -5,26 +5,29 @@
 
 #wrapper {
 	margin: 0 auto;
-	width: 1600px;
+    max-width: 1600px;
 	position: relative;
 }
-
+.hidden-menu{
+    display: none;
+}
 body {
 	background-color: #000;
 }
 
-.background {
-	width: 100%;
-	position: absolute;
+.background{
+    width: 1600px;
+    height: 1080px;
+    position: absolute;
+    background-image: url(../images/Background.jpg);
 }
-
 .alex {
 	width: 206px;
 	height: 491px;
 	position: absolute;
-	left: 0px;
+	left: 0;
 	top: 50px;
-	background: url('../images/Alex.png')
+	background-image: url(../images/Alex.png);
 }
 
 .alex:hover {
@@ -89,7 +92,6 @@ body {
 
 .angelos:hover {
 	width: 567px;
-	height: 804px;
 	height: 848px;
 	background-image: url(../images/Angel-hover.png);
 }
@@ -110,7 +112,7 @@ body {
 }
 
 .nikolas {
-	width: 773px;
+	width: 733px;
 	height: 825px;
 	position: absolute;
 	left: 60px;
@@ -128,28 +130,312 @@ body {
 	width: 1600px;
 	height: 459px;
 	position: absolute;
-	left: 0px;
+	left: 0;
 	top: 630px;
 	background-image: url(../images/logo-line.png);
 }
-@media all and (max-width: 1600px){
+#wrapper > main > p{
+    position: absolute;
+    z-index: 1111;
+    color: white;
+    top: 950px;
+    left: 0;
+    font-size: 2em;
+}
+@media screen and (max-width: 1600px){
 	
 }
-@media all and (max-width: 1024px){
+@media screen and (max-width: 1024px){
+    body{
+        background-color: #000000;
+    }
+    #wrapper{
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    .background{
+        width: 800px;
+        height: 540px;
+        position: absolute;
+        background: url(../images/Background50%25.jpg) no-repeat;
+        background-size: cover;
+    }
+    .alex {
+        width: 103px;
+        height: 246px;
+        position: absolute;
+        left: 0;
+        top: 28px;
+        background-image: url(../images/Alex50%25.png)
+    }
+    .alex:hover {
+        width: 103px;
+        height: 246px;
+        background-image: url(../images/Alex-hover50%25.png);
+    }
+    .nikolas {
+        width: 367px;
+        height: 413px;
+        position: absolute;
+        left: 28px;
+        top: 190px;
+        background-image: url(../images/Nikolay50%25.png);
+    }
+    .nikolas:hover {
+        width: 367px;
+        height: 413px;
+        background-image: url(../images/Nikolay-hover50%25.png);
+    }
+    .contacts {
+        width: 89px;
+        height: 96px;
+        position: absolute;
+        left: 200px;
+        top: 5px;
+        background-image: url(../images/pigeon50%25.png);
+    }
+    .contacts:hover {
+        width: 89px;
+        height: 96px;
+        background-image: url(../images/pigeon-hover50%25.png);
+    }
+    .mission {
+        width: 110px;
+        height: 50px;
+        position: absolute;
+        left: 450px;
+        top: 5px;
+        background-image: url(../images/star50%25.png);
+    }
+    .news {
+        width: 136px;
+        height: 164px;
+        position: absolute;
+        left: 663px;
+        top: 4px;
+        background-image: url(../images/board50%25.png);
+    }
+    .news:hover {
+        width: 136px;
+        height: 164px;
+        background-image: url(../images/board-hover50%25.png);
+    }
+    .angelos {
+        width: 284px;
+        height: 402px;
+        position: absolute;
+        left: 240px;
+        top: 150px;
+        background-image: url(../images/Angel50%25.png);
+    }
+    .angelos:hover {
+        width: 284px;
+        height: 402px;
+        background-image: url(../images/Angel-hover50%25.png);
+    }
+    .bogomos {
+        width: 302px;
+        height: 408px;
+        position: absolute;
+        left: 450px;
+        top: 200px;
+        background-image: url(../images/Bogomil50%25.png);
+    }
+    .bogomos:hover {
+        width: 302px;
+        height: 408px;
+        background-image: url(../images/Bogomil-hover50%25.png);
+    }
+    .logo {
+        width: 800px;
+        height: 230px;
+        position: absolute;
+        left: 0;
+        top: 440px;
+        background-image: url(../images/logo-line50%25.png);
+    }
+    #wrapper > main > p{
+        position: absolute;
+        z-index: 1111;
+        color: white;
+        top: 600px;
+        left: 0;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 960px){
+
+}
+@media screen and (max-width: 768px){
 	
 }
-@media all and (max-width: 960px){
+@media screen and (max-width: 640px){
 	
 }
-@media all and (max-width: 768px){
-	
+@media screen and (max-width: 480px){
+
+    .background{
+        width: 400px;
+        height: 270px;
+        position: absolute;
+        background: url(../images/Background25%25.jpg) no-repeat;
+        background-size: cover;
+
+    }
+    .hidden-menu{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+
+    }
+    .logo {
+        width: 400px;
+        height: 115px;
+        position: absolute;
+        left: 0;
+        top: 220px;
+        background-image: url(../images/logo-line25%25.png);
+    }
+    #wrapper > main > ul{
+        position: absolute;
+        z-index: 999;
+        width: 400px;
+        text-align: center;
+    }
+    #wrapper > main > ul>li{
+        padding: 8px;
+    }
+    #wrapper > main > ul>li>a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .background{
+        background-color: #000000;
+    }
+    .alex {
+        display: none;
+    }
+    .alex:hover {
+        display: none;
+    }
+    .nikolas {
+        display: none;
+    }
+    .nikolas:hover {
+        display: none;
+    }
+    .contacts {
+        display: none;
+    }
+    .contacts:hover {
+        display: none;
+    }
+    .mission {
+        display: none;
+    }
+    .news {
+        display: none;
+    }
+    .news:hover {
+        display: none;
+    }
+    .angelos {
+        display: none;
+    }
+    .angelos:hover {
+        display: none;
+    }
+    .bogomos {
+        display: none;
+    }
+    .bogomos:hover {
+        display: none;
+    }
+    #wrapper > main > p{
+        position: absolute;
+        z-index: 1111;
+        color: white;
+        top: 300px;
+        left: 0;
+        font-size: 0.5em;
+    }
 }
-@media all and (max-width: 640px){
-	
-}
-@media all and (max-width: 480px){
-	
-}
-@media all and (max-width: 320px){
-	
+@media screen and (max-width: 320px){
+    .background{
+        width: 400px;
+        height: 270px;
+        position: absolute;
+        background: url(../images/Background25%25.jpg) no-repeat;
+        background-size: cover;
+
+    }
+    .hidden-menu{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+
+    }
+    .logo {
+        width: 400px;
+        height: 115px;
+        position: absolute;
+        left: 0;
+        top: 220px;
+        background-image: url(../images/logo-line25%25.png);
+    }
+    #wrapper > main > ul{
+        position: absolute;
+        z-index: 999;
+        width: 400px;
+        text-align: center;
+    }
+    #wrapper > main > ul>li{
+        padding: 8px;
+    }
+    #wrapper > main > ul>li>a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .background{
+        background-color: #000000;
+    }
+    .alex {
+        display: none;
+    }
+    .alex:hover {
+        display: none;
+    }
+    .nikolas {
+        display: none;
+    }
+    .nikolas:hover {
+        display: none;
+    }
+    .contacts {
+        display: none;
+    }
+    .contacts:hover {
+        display: none;
+    }
+    .mission {
+        display: none;
+    }
+    .news {
+        display: none;
+    }
+    .news:hover {
+        display: none;
+    }
+    .angelos {
+        display: none;
+    }
+    .angelos:hover {
+        display: none;
+    }
+    .bogomos {
+        display: none;
+    }
+    .bogomos:hover {
+        display: none;
+    }
 }
