@@ -31,7 +31,7 @@ nav:after {
 }
 
 ul > li {
-    padding-left: 5%;
+    padding-left: 3%;
     display: inline-block;
     text-decoration: none;
     text-align: left;
@@ -42,7 +42,7 @@ ul > li > a,
 nav > ul > li > ul > li > a {
     text-decoration: none;
     font-family: 'Fondamento', cursive;
-    font-size: 20px;
+    font-size: 25px;
     color: #C2C2C2;
     text-align: center;
 }
@@ -98,7 +98,7 @@ nav > ul > li:hover ul > li {
 h1 {   
     font-family: 'Uncial Antiqua', cursive;
     text-transform: capitalize;
-    text-indent: 20px;
+    text-indent: -10px;
     font-size: 4em;
     text-align: center;
     text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0;
@@ -146,7 +146,7 @@ footer p {
 
 article>a{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .logos{
@@ -156,11 +156,11 @@ article>a{
     float: left;
 }
 .faces{
-    width: 100px;
-    height: 100px;    
+    width: 150px;
+    height: 150px;    
     border-radius: 50%;
     background-color: transparent;
-    margin-left: 30px;
+    margin: 5px 15px;
      -moz-transition:-moz-transform 0.5s ease-in; 
     -webkit-transition:-webkit-transform 0.5s ease-in; 
     -o-transition:-o-transform 0.5s ease-in;
@@ -173,7 +173,7 @@ article>a{
 }
 
 .team-karaoke{
-    margin:15px;
+    margin:15px 110px;
     width: 250px;
     height: 150px;
     border-radius: 40%;
@@ -192,7 +192,7 @@ article>a{
     width: 270px;
     height: 220px;
     border-radius: 40%;
-    margin: 40px;
+    margin-left: 100px;
     -moz-transition:-moz-transform 0.5s ease-in; 
     -webkit-transition:-webkit-transform 0.5s ease-in; 
     -o-transition:-o-transform 0.5s ease-in;
@@ -212,14 +212,240 @@ article>a{
 
 @media only screen and (max-width:1024px) {
 
+    #wrapper{
+        width: 96%;
+    }
+
+    nav{
+        width: 92%;
+    }
+
+    ul > li{
+        font-size: 30px;
+    }
+
+    nav > ul > li:nth-child(2):hover {
+        margin-bottom: 10px;
+    }
+
+    nav > ul > li:hover ul li {
+        display: block;
+        text-align: center;        
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    .self-printed-text{
+        margin-top: 25px;
+        width: 950px;
+        height: 800px;
+    }
+
+    .faces{
+        width: 150px;
+        height: 150px;
+        margin: 5px 15px;
+    }
+
+    .team-karaoke{
+        margin:15px 110px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .kaskata-trifon{
+        width: 270px;
+        height: 220px;        
+        margin-left: 370px;
+    }
+
+    footer {
+        background: url("../images/logo-line.png") no-repeat center;
+        background-size:  100%;    
+        height: 300px;
+        position: relative;
+        margin-bottom: -20px; 
+    }
+
+    .logos {
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+        float: left;
+    }
+
+    article > a {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .logos > a > img {
+        height: 35px;
+        width: 80px;
+    }
+
 }
 
 @media only screen and (max-width:960px) {
 
+    #wrapper{
+        padding: 20px;
+        width: 96%;
+    }
+
+    nav {
+        margin: 0 auto;
+        padding: 3%;
+        width: 96%;
+    }   
+
+    nav > ul > li{
+        padding-left: 4%;
+    }
+
+    h1 {
+        font-size: 3em;    
+        text-align: center;
+    }
+
+    .slogan{
+        margin: 2%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .self-printed-text{
+        height: 800px;
+    }
+
+    .faces{
+      margin-left: 65px;
+    }
+
+    .team-karaoke{
+       margin-left: 130px;
+    }
+
+    .kaskata-trifon{
+     margin-left: 345px;
+    }
+
+    footer {
+        background: url("../images/logo-line.png") no-repeat center;
+        background-size:  100%;    
+        height: 275px;
+        position: relative;
+        margin-bottom: -25px; 
+    }
+
+    .logos {
+        position: absolute;
+        bottom: 12%;
+        left: 4%;
+        float: left;
+    }
+
+    article > a {
+    display: block;
+    margin-bottom: 2px;
+    }
+
+    .logos > a > img {
+        width: 80px;
+        height: 40px;
+    }
+    
 }
 
 @media only screen and (max-width:768px) {
 
+    #wrapper{
+        width: 95%;
+    }
+
+    nav{
+        width: 94%;
+        padding: 3%;
+    }
+
+    nav > ul > li {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 2em;
+        font-weight: bold;
+        padding: 1%;
+        text-align: left;
+    }  
+
+    nav > ul > li:nth-child(2):hover {
+    margin-bottom: 90px;
+    }
+
+
+    nav > ul > li:hover ul li {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin-left: 200px;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    .slogan{
+        font-size: 2em;
+        margin: 2%;
+    }
+
+    .self-printed-text{
+        margin-top: 25px;
+        width: 750px;
+        height: 750px;
+    }
+
+    .faces{
+        width: 95px;
+        height: 90px;
+        margin-left: 30px;
+    }
+
+    .team-karaoke{
+        width: 200px;
+        height: 160px;
+        margin: 0px 75px 0px 75px;
+    }
+
+    .kaskata-trifon{
+        margin:0px 249px 0px 249px;
+    }
+
+    footer {
+        background: url("../images/logo-line.png") no-repeat center;
+        background-size:  100%;    
+        height: 220px;
+        position: relative;
+        margin-bottom: -20px; 
+    }
+
+    .logos {
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+        float: left;
+    }
+
+    article > a {
+    display: block;
+    margin-bottom: 4px;
+    }
+
+    .logos > a > img {
+        height: 35px;
+         width: 80px;
+    }
 }
 
 @media only screen and (max-width:640px) {
@@ -228,8 +454,180 @@ article>a{
 
 @media only screen and (max-width:480px) {
 
+    #wrapper{
+        padding: 8px;
+    }
+
+    nav{
+        width: 75%;
+    }
+
+    nav > ul > li {
+        margin-left: 35px;
+        width: 45%;
+        font-size: 1.3em;       
+        padding: 3%;
+        text-align: center;
+    }  
+
+     nav > ul > li:nth-child(2):hover {
+        margin-bottom: 75px;
+    }
+
+    nav > ul > li:hover ul li {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin-left: 45px;
+    }
+
+    .slogan{
+        margin: 4%;
+        font-size: 1.5em;
+    }
+
+    .self-printed-text{
+        margin-top: 5px;
+        width: 470px;
+        height: 810px;
+    }
+
+    .leftalign{
+        font-size: 25px;
+    }
+
+    .faces{
+        width: 80px;
+        height: 60px;
+        margin-left: 45px;
+    }
+
+    .team-karaoke{
+        width: 160px;
+        height: 140px;
+        margin-left: 45px;
+    }
+
+    .kaskata-trifon{
+        width: 130px;
+        height: 120px;
+        margin-left: 175px;
+    }
+
+    footer {
+        background: url("../images/logo-line.png") no-repeat center;
+        background-size:  100%;    
+        height: 130px;
+        position: relative;
+        margin-bottom: -5px; 
+    }
+
+    .logos {
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+        float: left;
+    }
+
+    article > a {
+    display: block;
+    margin-bottom: 2px;
+    }
+
+    .logos > a > img {
+        height: 20px;
+         width: 50px;
+    }
 }
 
 @media only screen and (max-width:320px) {
 
+    #wrapper{
+        padding: 8px;
+    }
+
+    nav {
+        margin: 5px;
+        padding: 25px;
+    }   
+
+    nav > ul > li {
+        text-align: center;
+        width: 100%;
+        font-size: 1.3em;
+        margin: 1%;
+    }   
+
+    nav > ul > li:nth-child(2):hover {
+        margin-bottom: 75px;
+    }
+
+    nav > ul > li:nth-child(2):hover ul li {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin-left: 100px;
+    }
+
+    h1{
+        font-size: 2em; 
+        margin: 15px; 
+        text-align: left;      
+    }
+
+    .slogan{
+        margin: 4%;
+        font-size: 1em;
+    }
+
+    .self-printed-text{
+        margin-top: 5px;
+        width: 300px;
+        height: 750px;
+    }
+    
+    .leftalign{
+        font-size: 20px;
+    }
+    .faces{
+        width: 60px;
+        height: 50px;
+    }
+
+    .team-karaoke{
+        width: 130px;
+        height: 120px;
+        margin: 0px 80px 0px 80px;
+    }
+
+    .kaskata-trifon{
+        width: 130px;
+        height: 120px;
+        margin: 0px 80px 0px 80px;
+    }
+
+    footer {
+        background: url("../images/logo-line.png") no-repeat center;
+        background-size:  100%;    
+        height: 100px;
+        position: relative;
+        margin-bottom: -5px; 
+    }
+
+    .logos {
+        position: absolute;
+        bottom: 12%;
+        left: 4%;
+        float: left;
+    }
+
+    article > a {
+    display: block;
+    margin-bottom: 2px;
+    }
+
+    .logos > a > img {
+        height: 10px;
+        width: 50px;
+    }    
 }

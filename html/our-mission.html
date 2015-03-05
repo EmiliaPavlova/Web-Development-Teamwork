@@ -7,90 +7,11 @@
         <link rel="stylesheet" type="text/css" href="../styles/our-mission.css">
         <link href='http://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Uncial+Antiqua' rel='stylesheet' type='text/css'>
-
-        <script language="javascript" type="text/javascript" src="../js/play-sounds.js"></script>
-       
-         
-
-        <script language="JavaScript">
-
-        //Parameters:
-        //Широчината на "Телеграфа";
-        var dwidth=950;
-        //Височината на "Телеграфа";
-        var dheight=600;
-        //Скоростта на изписване на буквите
-        var dspeed=50; //1s=1000;
-        //Бакграунд;
-        var dbcolor="transparent";
-
-        var expclass='class=leftalign';
-
-        //Съобщение:
-        //В съобщението трябва да използвате \' in вместо of ';
-        var mesaj='<font class="menu-font">Maybe you think, that our main goal is to make you skillfull? No!</br>Our primary mission is to teach you how to become</br> the best muffin selfie maker:</br> <img  class="faces" src="../images/bogi-muffin.png" alt=""> <img  class="faces" src="../images/bankin-muffin.png" alt=""> <img class="faces" src="../images/kaskata.jpg" alt=""> <img  class="faces" src="../images/bogi-muffin1.png" alt=""> <img  class="faces" src="../images/bankin-muffin1.png" alt=""></br> To be  vital part in Karaoke Teamwork Projects:</br><img class="team-karaoke" src="../images/team-karaoke.jpg" alt=""> <img  class="team-karaoke" src="../images/softuni-conf.jpg" alt=""></br>To become a model, which pictures will be inseparable part of our future participants projects:</br> <img class="kaskata-trifon" src="../images/kaskata-trifon.jpg" alt=""></br>And remember - it\'s never too late to become ridiculous!';
-        //Алгоритъм:
-        var jj=-1;var kk=0;var wds=0;
-        function iens6exp()
-            {
-                jj++;
-            if(kk==0&&mesaj.charAt(jj)=="<")
-                {
-                    kk=1;wds=0;
-                }
-            else if(kk==1&&mesaj.charAt(jj)==">")
-                {
-                    kk=0;wds=0;
-                }
-            else if(kk==1)wds=0;
-            if(kk==0&&mesaj.charAt(jj)!=">"&&jj<=mesaj.length)
-                {
-                    wds=1;
-                    iens6div.innerHTML=mesaj.substring(0,jj)+'<font color="red">'+"_"+'</font>';
-                }
-            if(wds>0&&jj<=mesaj.length)setTimeout("iens6exp()",dspeed);
-            else if(jj<=mesaj.length)iens6exp();
-            }
-        function ns4exp()
-        {
-            jj++;
-            if(kk==0&&mesaj.charAt(jj)=="<")
-                {
-                    kk=1;wds=0;
-                }
-            else if(kk==1&&mesaj.charAt(jj)==">")
-                {
-                    kk=0;wds=0;
-                }
-            else if(kk==1)wds=0;
-            if(kk==0&&mesaj.charAt(jj)!=">"&&jj<=mesaj.length)
-                {
-                    wds=1;
-                    ns4div.document.write('<div '+expclass+'>'+mesaj.substring(0,jj)+'<font color="red">'+"_"+'</font></div>');
-                    ns4div.document.close();
-                }
-            if(wds>0&&jj<=mesaj.length)setTimeout("ns4exp()",dspeed);
-            else if(jj<=mesaj.length)ns4exp();
-        }
-
-        function startexp()
-        {
-            if(document.getElementById)
-            {
-                alch=document.getElementById('chthis');iens6div=document.getElementById('expdiv');iens6div.innerHTML='';iens6exp();
-            }
-            else if(document.all)
-                {
-                    alch=chthis;iens6div=expdiv;iens6div.innerHTML='';iens6exp();
-                }
-                else if(document.layers){ns4div=document.ns4expb0.document.ns4expb1;ns4div.document.write('');ns4div.document.close();ns4exp();
-            }
-        }
-        </script>
-        <!--Край на скрипта между HEAD таговете -->
+        <script language="JavaScript" type="text/javascript" src="../js/self-printed-text.js"></script>
+        <script language="javascript" type="text/javascript" src="../js/play-sounds.js"></script>        
     </head>
-    <body onload="startexp();">
 
+    <body onload="startexp();">
  <!-- Начало на #wrapper --> 
         <div id="wrapper">
             <nav>
@@ -110,30 +31,26 @@
             </nav>
 
             <section class="bio">
-
-            <h1>Our Mission</h1>
-            <h3 class="slogan">All for code and code for all!</h3>
+                <h1>Our Mission</h1>
+                <h3 class="slogan">All for code and code for all!</h3>
 <!-- Начало да скрипта между <div class="self-printed-text"> -->
-                    <div class= "self-printed-text">
-                        <script language="JavaScript">
-                            document.write('<table border=0 CELLSPACING="0" align="left" CELLPADDING="0"><tr><td width='+dwidth+'>');
-                                if(document.all||document.getElementById)
-                                    {
-                                        document.write('<div id="chthis" '+expclass+' style="position:relative;width:'+dwidth+';height:'+dheight+';background-color:'+dbcolor+';"><span id="expdiv"></span></div>');
-                                    }
-                        </script>
-                        <ilayer id="ns4expb0" width=&{dwidth}; height=&{dheight}; bgcolor=&{dbcolor};>
-                            <layer id="ns4expb1" width=&{dwidth}; height=&{dheight};>       
-                            </layer>
-                        </ilayer>
-                                </td>   
-                            </tr>
-                        </table>
-
-                    </div>
+                <div class= "self-printed-text">
+                    <script language="JavaScript">
+                        document.write('<table border=0 CELLSPACING="0" align="left" CELLPADDING="0"><tr><td width='+dwidth+'>');
+                            if(document.all||document.getElementById)
+                                {
+                                    document.write('<div id="chthis" '+expclass+' style="position:relative;width:'+dwidth+';height:'+dheight+';background-color:'+dbcolor+';"><span id="expdiv"></span></div>');
+                                }
+                    </script>
+                    <ilayer id="ns4expb0" width=&{dwidth}; height=&{dheight}; bgcolor=&{dbcolor};>
+                        <layer id="ns4expb1" width=&{dwidth}; height=&{dheight};>       
+                        </layer>
+                    </ilayer>
+                            </td>   
+                        </tr>
+                    </table>
+                </div>
 <!-- край на скрипта в <div class="self-printed-text"> -->
-                
-
             </section>
 
             <footer class="clear">
@@ -145,7 +62,7 @@
                     <a href="http://validator.w3.org" target="_blank">
                         <img src="../images/html5icon.png" alt="Валидатор HTML5">
                     </a>
-               </article>
+                </article>
 
                 <p class="italic">&copy; Team "Emerald"</p>
             </footer>
