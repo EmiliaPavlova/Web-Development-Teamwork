@@ -154,10 +154,15 @@ p{
     float: right;
     z-index:1111;
 }
-#wrapper > footer > article{
+footer div {
+    display: inline;
     position: absolute;
-    bottom: 920px;
-    left: 1300px;
+    bottom: 8%;
+    right: 2%;
+    float: right;
+    color: #C2C2C2;
+    text-align: right;
+    font-style: italic;
 }
 
 @media screen and (max-width: 1024px){
@@ -739,6 +744,7 @@ p{
     #wrapper > main > ul>li>a{
         color: #ffffff;
         text-decoration: none;
+        font-family: 'Fondamento', cursive;
     }
     .background{
         background-color: #000000;

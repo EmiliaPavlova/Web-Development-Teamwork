@@ -37,4 +37,3 @@ function createsoundbite(sound) {
 }
 
 var mouseoversound1 = createsoundbite("../sounds/sword-clash.wav")
-//var clicksound1 = createsoundbite("click_sound.ogg", "click_sound.mp3")
